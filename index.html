@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Aliens Abducted Me - Report an Abduction</title>
+<link href="css/style.css" rel="stylesheet"/>
+
+<!--[if IE]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<section>
+
+<div id="section_articleOneIdentifier" class="sectionOne" ><hr class="hrStyle"></div>
+<article id="article_one" style="position: absolute; left: 420px; top: 10px; width: 315px; height: 550px; z-index: 2">
+
+<h1>Aliens Abducted Me - </h1>
+<p>Report an Abduction, contact us:</p>
+<form method="POST" action="insert.php">
+
+<label>First Name: </label><br>
+<input name= "firstname" type="text" autofocus required value="" placeholder=" First Name"> <br><br>
+
+<label>Middle Name: </label><br>
+<input name="middlename" type="text" disabled><- disabled <br><br>
+
+<label>Last Name: </label><br>
+<input name="lastname" type="text" maxlength="25" required placeholder=" Last Name"> <br><br>
+
+<label>Email: </label><br>
+<input name="email" type="email" required placeholder=" Email"><br><br>
+
+<label>When did it happen?  </label><br>
+<input name="whenithappened" type="text" placeholder="  YYYY-MM-DD"><br><br>
+
+<label>How long were you gone?</label><br>
+<input name="howlong" type="text" placeholder=" How long were you gone?"/><br><br>
+
+<label>How many did you see?</label><br>
+<input name="howmany" type="text" placeholder=" How many did you see?"/><br><br>
+
+<label for="aliendescription">Describe them:</label><br>
+<input type="text" name="aliendescription" size="32" placeholder=" Describe them" /><br><br>
+
+<label for="whattheydid">What did they do to you?</label><br>
+<input type="text" name="whattheydid" size="32" placeholder=" What did they do to you?" /><br><br>
+
+<label>Have you seen my dog Fang?</label><br>
+Yes <input name="fangspotted" type="radio" value="yes" />
+No <input name="fangspotted" type="radio" value="no" /><br><br>
+<img src="fang.jpg" width="100" height="175"
+alt="My abducted dog Fang." /><br><br>
+
+<label for="other">Anything else you want to add?</label>
+<textarea name="other" placeholder="Anything else you want to add?" ></textarea><br><br>
+
+<button type=submit>Submit</button>
+</form>
+</article>
+</section>
+
+<!--
+<footer id="footer" class="footerStyle" style="">
+<hr class="HRstyle" />
+<p class="Copyright">Copyright � 2013 Aliens Anonymous</p>
+</footer>
+-->
+</body>
+</html>
