@@ -30,18 +30,18 @@
 			 //$dbc = new mysqli('pendragon.gannon.edu', 'smith03', 'Id#7654321', 'db_smith003')
 		  or die('Error connecting to MySQL server.');
 
-/*
+
 		$query = "INSERT INTO aliens_abduction (first_name, last_name, when_it_happened, how_long, " .
-		    	 "how_many, alien_description, what_they_did, fang_spotted, other, email) " .
-				 "VALUES ('$first_name', '$last_name', '$when_it_happened', '$how_long', '$how_many', " .
-				 "'$alien_description', '$what_they_did', '$fang_spotted', '$other', '$email')";
-*/
-		$query =  "INSERT INTO aliens_abduction (first_name, last_name, when_it_happened, how_long,";
+		    	   "how_many, alien_description, what_they_did, fang_spotted, other, email) " .
+				     "VALUES ('$first_name', '$last_name', '$when_it_happened', '$how_long', '$how_many', " .
+				     "'$alien_description', '$what_they_did', '$fang_spotted', '$other', '$email')";
+
+/*	$query =  "INSERT INTO aliens_abduction (first_name, last_name, when_it_happened, how_long,";
 		$query .= "how_many, alien_description, what_they_did, fang_spotted, other, email)";
 
 		$query .= "VALUES ('$first_name', '$last_name', '$when_it_happened', '$how_long', '$how_many',";
 		$query .= "'$alien_description', '$what_they_did', '$fang_spotted', '$other', '$email')";
-
+*/
 		//$result = mysqli_query($dbc, $query)
 		$result = $dbc->query($query)
           or die('Error querying database.');
