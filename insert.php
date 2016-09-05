@@ -25,8 +25,8 @@
 /* Write the lines of code below which will provide the response
    once the form has been submitted */
 
-	   $dbc = mysqli_connect('localhost', 'root', '', 'db_aliens')
-		   //$dbc = new mysqli('localhost', 'root', '', 'db_aliens')
+	     //$dbc = mysqli_connect('localhost', 'root', '', 'db_aliens')
+		  $dbc = new mysqli('localhost', 'root', '', 'db_aliens')
 			 //$dbc = new mysqli('pendragon.gannon.edu', 'smith03', 'Id#7654321', 'db_smith003')
 		  or die('Error connecting to MySQL server.');
 
