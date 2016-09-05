@@ -1,3 +1,7 @@
+<?php
+ini_set("display_errors","on");
+require_once('includes/connection.inc.php');
+?>
 <!DOCTYPE HTML>
 
 <html>
@@ -7,8 +11,8 @@
 	</head>
 
 <body>
-	<h2>SUCCESS!!! - Open phpMyAdmin and check that the data has been added</h2>
-
+	<h2>Aliens Abducted Me - Report an Abduction</h2><br>
+    <a href="select.php">Display Contacts</a>
 	<?php
 
 		$first_name = $_POST['firstname'];
@@ -25,23 +29,24 @@
 /* Write the lines of code below which will provide the response
    once the form has been submitted */
 
-	   $dbc = mysqli_connect('localhost', 'root', '', 'db_aliens')
-		   //$dbc = new mysqli('localhost', 'root', '', 'db_aliens')
-			 //$dbc = new mysqli('pendragon.gannon.edu', 'smith03', 'Id#7654321', 'db_smith003')
-		  or die('Error connecting to MySQL server.');
+	   //$dbc = mysqli_connect('localhost', 'root', 'Gannon123', 'db_aliens')
+	   //  $dbc = new mysqli('localhost', 'root', 'Gannon123', 'db_aliens')
+		//  or die('Error connecting to MySQL server.');
 
+		$dbc = dbConnect('local');
 
+/*
 		$query = "INSERT INTO aliens_abduction (first_name, last_name, when_it_happened, how_long, " .
-		    	   "how_many, alien_description, what_they_did, fang_spotted, other, email) " .
-				     "VALUES ('$first_name', '$last_name', '$when_it_happened', '$how_long', '$how_many', " .
-				     "'$alien_description', '$what_they_did', '$fang_spotted', '$other', '$email')";
-
-/*	$query =  "INSERT INTO aliens_abduction (first_name, last_name, when_it_happened, how_long,";
+		    	 "how_many, alien_description, what_they_did, fang_spotted, other, email) " .
+				 "VALUES ('$first_name', '$last_name', '$when_it_happened', '$how_long', '$how_many', " .
+				 "'$alien_description', '$what_they_did', '$fang_spotted', '$other', '$email')";
+*/
+		$query =  "INSERT INTO aliens_abduction (first_name, last_name, when_it_happened, how_long,";
 		$query .= "how_many, alien_description, what_they_did, fang_spotted, other, email)";
 
 		$query .= "VALUES ('$first_name', '$last_name', '$when_it_happened', '$how_long', '$how_many',";
 		$query .= "'$alien_description', '$what_they_did', '$fang_spotted', '$other', '$email')";
-*/
+
 		//$result = mysqli_query($dbc, $query)
 		$result = $dbc->query($query)
           or die('Error querying database.');
