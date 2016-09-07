@@ -9,5 +9,6 @@ To use this project, your computer needs:
 git clone https://github.com/cannell001/aliens_survey.git
 cd aliens_survey
 npm install
+npm install gulp -global
 gulp
 ```
