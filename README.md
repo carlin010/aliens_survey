@@ -1,3 +1,12 @@
-# aliens_survey
+### Getting Started
+To use this project, your computer needs:
+- [Git](https://git-scm.com/)
+- [NodeJS](https://nodejs.org/en/)
 
-Lesson_01 -> print_r.php captures form data in $_POST super global array
+#### Using the CLI
+```
+git clone https://github.com/cannell001/aliens_survey.git
+cd aliens_survey
+npm install
+gulp
+```
