@@ -1,0 +1,16 @@
+{
+      "name": "aliens_survey",
+      "version": "0.0.1",
+      "author": "Nathan Carlin <carlin010@knights.gannon.edu>",
+      "description": "a simple script to start browser-sync",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/carlin010/aliens_survey"
+      },
+      "dependencies": {
+        "browser-sync": "*",
+        "gulp": "*",
+        "gulp-util": "*"
+      }
+  }
